@@ -1,0 +1,7 @@
+bin/hdfs namenode -format # to be executed only once
+sbin/start-dfs.sh # starts the jobs related with NamedNome and Data Nodes
+bin/hdfs dfs -mkdir /user
+bin/hdfs dfs -mkdir /user/luisfilipe #Create my directory
+jps # Verifies if the jobs are running
+sbin/start-yarn.sh #starts yarn related jobs
+jps #verify if the jobs have started correctly.
