@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$USER_HOME$/work/hadoop-2.9.0/share/hadoop/common/jdiff/Null.java" />
+      <file url="file://$USER_HOME$/work/hadoop-2.9.0/share/hadoop/hdfs/jdiff/Null.java" />
+    </excludeFromCompile>
+  </component>
+</project>
