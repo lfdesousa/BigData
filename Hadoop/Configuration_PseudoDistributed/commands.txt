@@ -5,3 +5,13 @@ bin/hdfs dfs -mkdir /user/luisfilipe #Create my directory
 jps # Verifies if the jobs are running
 sbin/start-yarn.sh #starts yarn related jobs
 jps #verify if the jobs have started correctly.
+
+In order to verify if the Namenode is healthy we can check this:
+http://localhost:50070/ Interface where we can have information about the namenode
+
+In order to avoid having to type bin/
+before each one of the hadoop related commands, we can add it to the path, like this:
+export PATH=$PATH:~/work/hadoop-2.9.0/bin
+
+Have a look at the url bellow, it configures a set of tools of the apache stack
+https://hadoop7.wordpress.com/2017/01/28/installing-apache-pig-on-ubuntu/
