@@ -1,0 +1,8 @@
+#Continuing our interaction with Kinesis below I provide a set of action that allows us to read
+# from a given stream
+
+#First we need to get a shard iterator, the goal is to read from the begining of the stream
+aws kinesis get-shard-iterator --stream-name test-stream --shard-iterator-type TRIM_HORIZON --shard-id shardId-000000000000
+
+#Once we have it we can in fact read the needed records, here I have not specified a limit
+aws kinesis get-records --shard-iterator AAAAAAAAAAHDOy76+mWFQef19hpLHMycD3qBynl+z6ohaoFnfjD+kg3/Fvsmi+bBxDPWZNEuhtGK5pA+yqwCHTCMn27l4a384bciHHCIcLcQ1NYAdVZOYaU9ux17R9DaA1YlEFkUHUdbIwmWLbjf4lKUJw5oNLhrFA5WuSSAYYFy0fH3W5OZgpw3FrqYKe19cUMGP+8ell849n2GaPdyu7vOxa5V3ewk

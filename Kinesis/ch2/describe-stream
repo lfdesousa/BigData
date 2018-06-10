@@ -1,0 +1,5 @@
+#This file contains usefull commands to describe streams
+aws kinesis describe-stream --stream-name test-stream
+
+# We assume that the awscli is correctly installed and that you have configured
+# a valid user within AMI
